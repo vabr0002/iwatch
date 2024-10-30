@@ -23,14 +23,18 @@ const Navigation = () => {
 
       <div className="flex space-x-4">
         <div>
-          <TfiSearch size={25} color="white" className="cursor-pointer" />
+          <TfiSearch
+            size={25}
+            color="white"
+            className="cursor-pointer  hover:scale-125 transition-transform duration-300"
+          />
         </div>
         <div className="w-px h-6 bg-white"></div>
         <a href="#">
           <FaBasketShopping
             size={25}
             color="white"
-            className="cursor-pointer"
+            className="cursor-pointer  hover:scale-125 transition-transform duration-300"
           />
         </a>
       </div>

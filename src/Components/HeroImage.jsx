@@ -9,8 +9,8 @@ const HeroImage = () => {
       {" "}
       <div>
         <div className="text-white grid text-6xl mb-20 mt-20">
-          <h1 className="font-extrabold">The Perfect Moment</h1>
-          <h1 className="font-thin">Between Past And Future.</h1>
+          <h1 className="font-black">The Perfect Moment</h1>
+          <h1 className="font-100">Between Past And Future.</h1>
         </div>
         <div className="my-8">
           <button className="text-white border-solid border-2 rounded-full text-lg p-3 inline-block px-14 hover:bg-white hover:text-[#B6CCDA] hover:border-white transition mt-12">
