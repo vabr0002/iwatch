@@ -1,4 +1,4 @@
-const NavButton = ({ link, text }) => {
+const Button = ({ link, text }) => {
   return (
     <a
       href={link}
@@ -9,4 +9,4 @@ const NavButton = ({ link, text }) => {
   );
 };
 
-export default NavButton;
+export default Button;

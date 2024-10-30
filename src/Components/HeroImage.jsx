@@ -19,10 +19,8 @@ const HeroImage = () => {
         </div>
         <div className="absolute left-4 bottom-4 flex items-center text-white">
           <FaArrowLeft className="text-2xl hover:scale-125 transition-transform duration-300" />{" "}
-          {/* Justeret størrelse og hover-effekt */}
           <p className="px-4 font-bold">1</p>
           <FaArrowRight className="text-2xl hover:scale-125 transition-transform duration-300" />{" "}
-          {/* Justeret størrelse og hover-effekt */}
         </div>
       </div>
       <div className="gap-6">
@@ -37,34 +35,34 @@ const HeroImage = () => {
           <div className="relative flex justify-center items-start">
             <Image
               src="/navy.png"
-              width={250}
-              height={250}
+              width={150}
+              height={150}
               alt="iWatch"
-              className="absolute "
+              className="absolute top-5"
             />
-            <div className="bg-[#434558] w-48 h-32 rounded-lg mt-20"></div>
+            <div className="bg-[#434558] w-48 h-24 rounded-lg mt-20"></div>
           </div>
 
           <div className="relative flex justify-center items-start">
             <Image
               src="/mint.png"
-              width={250}
-              height={250}
+              width={150}
+              height={150}
               alt="iWatch"
-              className="absolute "
+              className="absolute top-5"
             />
-            <div className="bg-[#6ADDCC] w-48 h-32 rounded-lg mt-20"></div>
+            <div className="bg-[#6ADDCC] w-48 h-24 rounded-lg mt-20"></div>
           </div>
 
           <div className="relative flex justify-center items-start">
             <Image
               src="/ocean.png"
-              width={250}
-              height={250}
+              width={150}
+              height={150}
               alt="iWatch"
-              className="absolute "
+              className="absolute top-5 "
             />
-            <div className="bg-[#F9CDC4] w-48 h-32 rounded-lg mt-20"></div>
+            <div className="bg-[#F9CDC4] w-48 h-24 rounded-lg mt-20"></div>
           </div>
         </div>
       </div>

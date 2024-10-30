@@ -2,7 +2,7 @@ import { IoLogoApple } from "react-icons/io5";
 import { TfiSearch } from "react-icons/tfi";
 import { FaBasketShopping } from "react-icons/fa6";
 
-import NavButton from "./Navbutton";
+import Button from "./Button";
 
 const Navigation = () => {
   return (
@@ -13,11 +13,11 @@ const Navigation = () => {
 
       <div className=" text-white">
         <ul className="flex space-x-6 gap-x-12">
-          <NavButton text="Mac" link="#" />
-          <NavButton text="iPhone" link="#" />
-          <NavButton text="iPad" link="#" />
-          <NavButton text="iWatch" link="#" />
-          <NavButton text="Support" link="#" />
+          <Button text="Mac" link="#" />
+          <Button text="iPhone" link="#" />
+          <Button text="iPad" link="#" />
+          <Button text="iWatch" link="#" />
+          <Button text="Support" link="#" />
         </ul>
       </div>
 
