@@ -1,12 +1,12 @@
 import Image from "next/image";
-
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { CgBorderStyleDotted } from "react-icons/cg";
 
 const HeroImage = () => {
   return (
-    <div className="grid grid-cols-[50%_40%_10%] max-w-7xl mx-auto mt-20 mb-20 h-full">
+    <div className="grid grid-cols-[50%_40%_10%] max-w-7xl mx-auto mt-20 mb-20 h-full relative">
+      {" "}
       <div>
         <div className="text-white grid text-6xl mb-20 mt-20">
           <h1 className="font-extrabold">The Perfect Moment</h1>
@@ -17,13 +17,14 @@ const HeroImage = () => {
             Buy Now
           </button>
         </div>
-        <div className="absolute bottom-8 left-5 flex items-center text-white ">
-          <FaArrowLeft />
-          <p className="px-4">1</p>
-          <FaArrowRight />
+        <div className="absolute left-4 bottom-4 flex items-center text-white">
+          <FaArrowLeft className="text-2xl hover:scale-125 transition-transform duration-300" />{" "}
+          {/* Justeret størrelse og hover-effekt */}
+          <p className="px-4 font-bold">1</p>
+          <FaArrowRight className="text-2xl hover:scale-125 transition-transform duration-300" />{" "}
+          {/* Justeret størrelse og hover-effekt */}
         </div>
       </div>
-
       <div className="gap-6">
         <Image
           src="/navy.png"
@@ -67,12 +68,12 @@ const HeroImage = () => {
           </div>
         </div>
       </div>
-      <div className="content-center mx-auto">
-        <div className="bg-[#434558] cursor-pointer border-2 rounded-full w-4 h-4 hover:scale-125"></div>
-        <CgBorderStyleDotted className="rotate-90 text-white" />
-        <div className="bg-[#6ADDCC] cursor-pointer border-2 rounded-full w-4 h-4 hover:scale-125"></div>
-        <CgBorderStyleDotted className="rotate-90 text-white" />
-        <div className="bg-[#F9CDC4] cursor-pointer  border-2 rounded-full w-4 h-4 hover:scale-125"></div>
+      <div className="flex flex-col items-center pt-40">
+        <div className="bg-[#434558] cursor-pointer border-2 rounded-full w-6 h-6 hover:scale-125 mb-1"></div>
+        <CgBorderStyleDotted className="rotate-90 text-white mb-1" />
+        <div className="bg-[#6ADDCC] cursor-pointer border-2 rounded-full w-6 h-6 hover:scale-125 mb-1"></div>
+        <CgBorderStyleDotted className="rotate-90 text-white mb-1 w-9" />
+        <div className="bg-[#F9CDC4] cursor-pointer border-2 rounded-full w-6 h-6 hover:scale-125"></div>
       </div>
     </div>
   );
